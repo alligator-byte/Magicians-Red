@@ -27,3 +27,35 @@ cards = ["The Fool (0)",
 #draw some cards
 reading = random.sample(cards, 3)
 print(reading)
+
+#dictionary with sub dictionary idea
+interpretation = {
+    "The Fool (0)":{
+        "default": "BLANK",
+        "past": "BLANK",
+        "present":"BLANK",
+        "future": "BLANK"
+    },
+    "The Magician (I)":{
+        "default": "BLANK",
+        "past": "BLANK",
+        "present":"BLANK",
+        "future": "BLANK"
+    }
+}
+
+#lists for each - then use the indexes to find
+past = ["Info here...",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""]
+present =  []
+future = []
