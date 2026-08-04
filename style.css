@@ -1,1 +1,142 @@
+/* ==========================
+   General
+========================== */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3A1F16;
+    color: #F7E7A9;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ==========================
+   Headings
+========================== */
+
+h1 {
+    color: #F4C542;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #F4C542;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #E5D6A0;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   Paragraphs
+========================== */
+
+p {
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+button {
+    background-color: #8B1E2D;
+    color: #F7E7A9;
+
+    border: 2px solid #F4C542;
+
+    padding: 12px 24px;
+
+    font-size: 1rem;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #B52A3A;
+    transform: scale(1.05);
+}
+
+/* ==========================
+   Links
+========================== */
+
+a {
+    text-decoration: none;
+}
+
+/* ==========================
+   Reading Cards
+========================== */
+
+.card {
+    background-color: #5B3827;
+
+    border: 2px solid #D4AF37;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin: 25px 0;
+
+    text-align: center;
+}
+
+.card img {
+    width: 220px;
+    max-width: 100%;
+
+    margin: 20px 0;
+
+    border-radius: 10px;
+
+    border: 3px solid #F4C542;
+}
+
+/* ==========================
+   Home Page
+========================== */
+
+.home {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.home p {
+    font-size: 1.2rem;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer {
+    text-align: center;
+
+    margin-top: 60px;
+
+    color: #C8B07A;
+
+    font-size: 0.9rem;
+}
