@@ -210,6 +210,20 @@ print(reading)
 '''
 STEP 2 - LINK INTERPRETATIONS 
 '''
-drawn_past = reading[0]
-drawn_present = reading[1]
-drawn_future = reading [2]
+
+past = card_D[reading[0]]
+present = card_D[reading[1]]
+future = card_D[reading [2]]
+
+print("\nPast")
+print(reading[0])
+print(past["default"])
+
+print("\nPresent")
+print(reading[1])
+print(present["default"])
+
+print("\nFuture")
+print(reading [2])
+print(future["default"])
+
