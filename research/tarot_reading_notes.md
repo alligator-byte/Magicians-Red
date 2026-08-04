@@ -18,41 +18,28 @@
       - Death
       - The Tower
       - The Sun
-  - **56 Minor Arcana**
-    - represent everyday situations and smaller influences
-    - divided into 4 suits:
-      - Cups
-      - Pentacles
-      - Swords
-      - Wands
+  - 56 Minor Arcana will not be considered for this tool at the moment
 
 ---
 
 ## General Tarot Reading Process
 
 ### 1. Set intention / ask question
-- Reader or user chooses a focus.
-- Questions are often open-ended.
-- Examples:
-  - "What should I know about my current situation?"
-  - "What energy surrounds this decision?"
+- Reader or user chooses a focus and asked questions
+- Application should just prompt reader to draw 
 
 ---
 
 ### 2. Shuffle the deck
 - Cards are shuffled to randomize order.
-- Some traditions involve:
-  - focusing on a question while shuffling
-  - cutting the deck before drawing
+- This is currently achieved by python random library (will remain this way unless a better implementation is found)
 
 ---
 
 ### 3. Draw cards
 - A specific number of cards is drawn depending on spread.
-- Example:
-  - 1 card = daily guidance
-  - 3 cards = simple reading
-  - larger spreads = more detailed analysis
+  - 3 cards = standard reading
+  - Possibly implement single (1 card) drawings later as a feature on the app
 
 ---
 
@@ -61,10 +48,8 @@
 
 Common 3-card spreads:
 - Past / Present / Future
-- Situation / Challenge / Advice
-- Mind / Body / Spirit
-
-Example:
+- 
+Thus:
 - Card 1 = Past
 - Card 2 = Present
 - Card 3 = Future
@@ -79,8 +64,7 @@ Example:
 
 Example:
 - The Fool in Present:
-  - new beginnings
-  - leap of faith
+  - new beginnings & a leap of faith
 - The Fool in Past:
   - earlier risk-taking or innocence
 
@@ -88,60 +72,22 @@ Example:
 
 ### 6. Interpret card relationships
 - Read cards as a sequence or narrative.
-
-Questions asked:
-- How does card 1 influence card 2?
-- Does the progression suggest movement, conflict, or resolution?
-
 Example:
 - High Priestess → Fool → Hierophant
   - intuition leads to a new beginning, which develops into structure/tradition
+This functionality is not planned at the moment; meanings shall be left open ended so that they can fit together and allow the user to extrapolate further.
 
 ---
 
 ### 7. Build narrative
 - Combine individual meanings into a coherent story.
-
-Example format:
-- Past influenced present
-- Present leads toward future
-
-Narrative style:
-- "You come from X, are currently facing Y, and may be moving toward Z."
-
+- Print out the Card images, with the meanings allowing a brief story to be crafted.
 ---
 
-## Reversed Cards (optional)
+## Additional Info - Reversed Cards (optional)
 - Some readings include reversed cards (upside down).
-- Often interpreted as:
-  - blocked energy
-  - internalized meaning
-  - opposite or weakened influence
-
-Example:
-- Upright Sun = optimism
-- Reversed Sun = delayed clarity or reduced confidence
-
-(Not required in all systems.)
-
----
-
-## Important Interpretation Principles
-- Tarot is not usually treated as fixed prediction.
-- Meanings are flexible and contextual.
-- Same card can mean different things depending on:
-  - spread position
-  - neighbouring cards
-  - question context
-
-Example:
-- Death may mean:
-  - endings
-  - transformation
-  - transition
-  - release
-
-Not necessarily literal death.
+- Often interpreted as having an opposite meaning to that card
+- This feature won't be implemented yet
 
 ---
 
@@ -168,7 +114,7 @@ Example output:
 
 ---
 
-## Common App Features
+## Possible App Features
 - Daily draw
 - 3-card spread
 - Custom questions
