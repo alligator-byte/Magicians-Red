@@ -1,36 +1,10 @@
 import random
 
-#major arcana 
-cards = ["The Fool (0)", 
-         "The Magician (I)", 
-         "The High Priestess (II)", 
-         "The Empress (III)", 
-         "The Emperor (IV)",
-         "The Hierophant (V)", 
-         "The Lovers (VI)", 
-         "The Chariot (VII)", 
-         "Strength (VIII)", 
-         "The Hermit (IX)",
-         "The Wheel of Fortune (X)", 
-         "Justice (XI)", 
-         "The Hanged Man (XII)", 
-         "Death (XIII)", 
-         "Temperance (XIV)",
-         "The Devil (XV)", 
-         "The Tower (XVI)", 
-         "The Star (XVII)", 
-        "The Moon (XVIII)", 
-        "The Sun (XIX)", 
-         "Judgment (XX)", 
-         "The World (XXI)"] 
-
-#draw some cards
-reading = random.sample(cards, 3)
-print(reading)
-
-#dictionary with sub dictionary idea
-interpretation = {
+#major arcana - dictionary with sub dictionary idea
+card_D = {
     "The Fool (0)":{
+        "number" : "0", 
+        "image" : "card_images/0_TheFool.png", 
         "default": "Innocence and spontaneity",
         "past": "BLANK",
         "present":"BLANK",
@@ -38,6 +12,8 @@ interpretation = {
     },
 
     "The Magician (I)":{
+        "number" : "1",
+        "image" : "card_images/1_TheMagician.png", 
         "default": "New beginnings",
         "past": "BLANK",
         "present":"BLANK",
@@ -45,6 +21,8 @@ interpretation = {
     },
 
     "The High Priestess (II)":{
+        "number" : "2",
+        "image" : "card_images/2_TheHighPriestess.png", 
         "default": "Intuition and arcane knowledge",
         "past": "BLANK",
         "present":"BLANK",
@@ -52,6 +30,7 @@ interpretation = {
     },
 
     "The Empress (III)":{
+        "number" : "3",
         "default": "Growth of new life",
         "past": "BLANK",
         "present":"BLANK",
@@ -59,6 +38,7 @@ interpretation = {
     },
 
     "The Emperor (IV)":{
+        "number" : "4",
         "default": "Order and control",
         "past": "BLANK",
         "present":"BLANK",
@@ -66,6 +46,7 @@ interpretation = {
     },
 
     "The Hierophant (V)":{
+        "number" : "5",
         "default": "Tradition and conformity",
         "past": "BLANK",
         "present":"BLANK",
@@ -73,6 +54,7 @@ interpretation = {
     },
 
     "The Lovers (VI)":{
+        "number" : "6",
         "default": "Conscious connections and bonds",
         "past": "BLANK",
         "present":"BLANK",
@@ -80,6 +62,7 @@ interpretation = {
     },
 
     "The Chariot (VII)":{
+        "number" : "7",
         "default": "Invasion and victory",
         "past": "BLANK",
         "present":"BLANK",
@@ -87,6 +70,7 @@ interpretation = {
     },
 
     "Strength (VIII)":{
+        "number" : "8",
         "default": "Resilience, compassion, and confidence",
         "past": "BLANK",
         "present":"BLANK",
@@ -94,6 +78,7 @@ interpretation = {
     },
 
     "The Hermit (IX)":{
+        "number" : "9",
         "default": "Introspection and contemplation",
         "past": "BLANK",
         "present":"BLANK",
@@ -101,6 +86,7 @@ interpretation = {
     },
 
     "The Wheel of Fortune (X)":{
+        "number" : "10",
         "default": "Change and unpredictability",
         "past": "BLANK",
         "present":"BLANK",
@@ -108,6 +94,7 @@ interpretation = {
     },
 
     "Justice (XI)":{
+        "number" : "11",
         "default": "Fairness and consequences",
         "past": "BLANK",
         "present":"BLANK",
@@ -115,6 +102,7 @@ interpretation = {
     },
 
     "The Hanged Man (XII)":{
+        "number" : "12",
         "default": "Different perspectives",
         "past": "BLANK",
         "present":"BLANK",
@@ -122,6 +110,7 @@ interpretation = {
     },
 
     "Death (XIII)":{
+        "number" : "13",
         "default": "Self-awareness and transformation",
         "past": "BLANK",
         "present":"BLANK",
@@ -129,6 +118,7 @@ interpretation = {
     },
 
     "Temperance (XIV)":{
+        "number" : "14",
         "default": "Balance and moderation",
         "past": "BLANK",
         "present":"BLANK",
@@ -136,6 +126,7 @@ interpretation = {
     },
 
     "The Devil (XV)":{
+        "number" : "15",
         "default": "Confusion and misfortune",
         "past": "BLANK",
         "present":"BLANK",
@@ -143,6 +134,7 @@ interpretation = {
     },
 
     "The Tower (XVI)":{
+        "number" : "16",
         "default": "Unexpected interruptions and chaos",
         "past": "BLANK",
         "present":"BLANK",
@@ -150,6 +142,7 @@ interpretation = {
     },
 
     "The Star (XVII)":{
+        "number" : "17",
         "default": "Optimism, discernment, and hope",
         "past": "BLANK",
         "present":"BLANK",
@@ -157,6 +150,7 @@ interpretation = {
     },
 
     "The Moon (XVIII)":{
+        "number" : "18",
         "default": "Troubled waters, lies, betrayal, and fear of the unknown",
         "past": "BLANK",
         "present":"BLANK",
@@ -164,12 +158,14 @@ interpretation = {
     },
 
     "The Sun (XIX)":{
+        "number" : "19",
         "default": "Abundance, happiness, and fun",
         "past": "BLANK",
         "present":"BLANK",
         "future": "BLANK"
     },
     "Judgment (XX)":{
+        "number" : "20",
         "default": "Rebirth and self-reflection",
         "past": "BLANK",
         "present":"BLANK",
@@ -177,6 +173,7 @@ interpretation = {
     },
 
     "The World (XXI)":{
+        "number" : "21",
         "default": "Achievement and a pause before the next cycle",
         "past": "BLANK",
         "present":"BLANK",
@@ -185,18 +182,7 @@ interpretation = {
 }
 
 
-#lists for each - then use the indexes to find
-past = ["Info here...",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""]
-present =  []
-future = []
+
+#draw some cards
+reading = random.sample(list(card_D.keys()), 3)
+print(reading)
