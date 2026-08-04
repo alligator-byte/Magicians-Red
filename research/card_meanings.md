@@ -1,11 +1,6 @@
 **0 Fool**
-Past
-- 
-Present
--
-Future
--
 
+Past - Previously 
 ---
 **1 The Magician**
 Past
